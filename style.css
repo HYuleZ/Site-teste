@@ -6,6 +6,10 @@
     font-family: 'Atkinson Hyperlegible', sans-serif;
 }
 
+.show{
+    background-color: #fcffb0;
+}
+
 #navbar{
     text-align: center;
     font-weight: bold;
@@ -32,22 +36,26 @@
     text-decoration: none; color: black;
 }
 
-a:link{
+.navbar-itens a:link{
     color: black;
     text-decoration: none;
 }
 
-a:visited{
+.navbar-itens a:visited{
     text-decoration: none;
     color: black;
 }
 
-.navbar-itens a:hover{
+.navbar-itens a:hover, #projeto1 a:hover{
     color: #263999;
 }
 
 .navbar-container2 ul li{
     padding: 0 30px;
+}
+
+.icons a:hover, .icons a, .icons a:visited{
+    color: black;
 }
 
 /* .imagem{
@@ -73,7 +81,7 @@ a:visited{
 
 
 #Apresentacao{
-    background-color: white;
+    background-color: #fcffb0;
     color: black;
     padding: 30px 180px 120px;
 }
@@ -102,6 +110,15 @@ a:visited{
     display: flex;
     justify-content: center;
     padding-top: 80px;
+}
+
+#projeto1 a, #projeto1 a:visited{
+    color: black;
+    text-decoration: none;
+}
+
+#projeto1 a:hover{
+    color: #263999;
 }
 
 #descricaoProjeto{
@@ -150,10 +167,36 @@ a:visited{
 
 .contatos{
     background-color: black;
-    padding: 10px 0 120px 0;
+    padding: 10px 0 50px 0;
 }
 
 #titleWhite{
     color: white;
     text-align: center;
+}
+
+#links a{
+    text-decoration: none;
+}
+
+#links a:link, #links a:visited{
+    color: white;
+}
+#links a:hover{
+    color: #263999;
+}
+
+#links{
+    display: flex;
+    text-align: center;
+    justify-content: center;
+}
+
+#githubLink{
+    padding-right: 20px;
+}
+
+#emailLink{
+    padding-left: 40px;
+    padding-right: 40px;
 }
