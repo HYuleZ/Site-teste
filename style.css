@@ -1,0 +1,261 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    scroll-behavior: smooth;
+    font-family: 'Atkinson Hyperlegible', sans-serif;
+}
+
+.show{
+    background-color: white;
+}
+
+#navbar{
+    text-align: center;
+    font-weight: bold;
+    position: fixed;
+    top: 0;
+    width: 100%;
+}
+.navbar-container{
+    display: flex;
+    background-color: #263999;
+    justify-content: space-between;
+    padding: 10px;
+}
+
+.navbar-itens{
+    background-color: #f2f2f2;
+    display: flex;
+    justify-content: center;
+    list-style: none;
+    padding: 30px 0 20px 0;
+}
+
+@media screen and (max-width: 600px) {
+    .icons{
+        display: none;
+    }
+    .navbar-container{
+        font-size: 12px;
+    }
+    .navbar-itens{
+        font-size: 10px;
+    }
+    .navbar-container2 ul li{
+        padding: 0 5px;
+    }
+    #imgProjeto{
+        height: 150px;
+        width: 250px;
+    }
+
+    #projeto1{
+        font-size: 12px;
+        text-align: center;
+    }
+
+    #descricaoProjeto{
+        padding-bottom: 20px;
+    }
+
+    #descricaoProjeto2{
+        text-align: center;
+    }
+    
+    .sanfona{
+        width: 340px;  /*1200px*/
+        height: 250px;  /*500px*/
+    }
+
+    .sanfona li img{
+        display: block;
+        width: 200px;
+        height: 250px;
+    }
+
+    .sanfona ul :hover li {width: 40px;}
+
+    .sanfona ul li:hover {width: 200px;}
+}
+
+@media screen and (min-width: 1080px) {
+    #projeto1{
+        display: flex;
+    }
+
+    #descricaoProjeto{
+        padding-right: 80px;
+    }
+
+    .sanfona{
+        width: 1200px;
+        height: 500px;
+    }
+
+    .sanfona li img{
+        display: block;
+        width: 1050px;
+        height: 500px;
+    }
+    .sanfona ul :hover li {width: 400px;}
+
+    .sanfona ul li:hover {width: 800px;}
+}
+
+.navbar-itens:visited, :focus, :active{
+    text-decoration: none; color: black;
+}
+
+.navbar-itens a:link{
+    color: black;
+    text-decoration: none;
+}
+
+.navbar-itens a:visited{
+    text-decoration: none;
+    color: black;
+}
+
+.navbar-itens a:hover, #projeto1 a:hover{
+    color: #263999;
+}
+
+.navbar-container2 ul li{
+    padding: 0 30px;
+}
+
+.icons a:hover, .icons a, .icons a:visited{
+    color: black;
+}
+
+#showcase{
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    padding-top: 400px;
+    color: white;
+    background: url("./img/casa.jpg") center center/cover;
+    background-color: rgba(0, 0, 0, .7);
+    background-blend-mode: color;
+}
+
+
+#Apresentacao{
+    background-color: white;
+    color: black;
+    padding: 30px 10px 200px;
+}
+#title{
+    text-align: center;
+}
+
+#usuario{
+    text-align: center;
+    /* padding-left: 600px; */
+    padding-top: 50px;
+    padding-bottom: 20px;
+}
+
+.descricao{
+    text-align: center;
+}
+
+#Projetos{
+    background-color: white;
+    color: black;
+    padding: 400px 0px 200px;
+}
+
+#projeto1{
+    /* display: flex; */
+    justify-content: center;
+    padding-top: 80px;
+}
+
+#projeto1 a, #projeto1 a:visited{
+    color: black;
+    text-decoration: none;
+}
+
+#projeto1 a:hover{
+    color: #263999;
+}
+
+#descricaoProjeto{
+    padding-right: 8px;
+}
+#descricaoProjeto2{
+    padding-right: 80px;
+    text-align: right;
+}
+
+.sanfona{
+    overflow: hidden;
+    margin: 50px auto;
+    box-shadow: 0 0 10px 1px rgba(0, 0, 0, 0.35);
+    -webkit-box-shadow: 0 0 10px 1px rgba(0, 0, 0, 0.35);
+    -moz-box-shadow: 0 0 10px 1px rgba(0, 0, 0, 0.35);
+}
+
+.sanfona ul{
+    width: 2000px;
+}
+
+.sanfona li{
+    position: relative;
+    display: block;
+    width: 50px;
+    float: left;
+    border: 1px solid #888;
+    box-shadow: 0 0 25px 10px rgba(0, 0, 0, .5);
+    -webkit-box-shadow: 0 0 25px 10px rgba(0, 0, 0, 0.5);
+    -moz-box-shadow: 0 0 25px 10px rgba(0, 0, 0, 0.5);
+    transition: all 0.5s;
+    -webkit-transition: all 0.5s;
+    -moz-transition: all 0.5s;
+}
+
+/* .sanfona ul :hover li {width: 40px;}
+
+.sanfona ul li:hover {width: 180px;} */
+
+.sanfona li img{
+    display: block;
+}
+
+.contatos{
+    background-color: black;
+    padding: 10px 0 50px 0;
+}
+
+#titleWhite{
+    color: white;
+    text-align: center;
+}
+
+#links a{
+    text-decoration: none;
+}
+
+#links a:link, #links a:visited{
+    color: white;
+}
+#links a:hover{
+    color: #263999;
+}
+
+#links{
+    display: flex;
+    text-align: center;
+    justify-content: center;
+}
+
+#githubLink{
+    padding-right: 20px;
+}
+
+#emailLink{
+    padding-left: 40px;
+    padding-right: 40px;
+}
